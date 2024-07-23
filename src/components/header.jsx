@@ -14,7 +14,7 @@ function Header() {
 						/>
 						<div className='flex items-center gap-[20px] justify-center md:justify-end mt-[100px] md:mt-[500px]'>
 							<img
-								src='/public/assets/header_arrow.png'
+								src='/assets/header_arrow.png'
 								alt='arrow'
 								className='w-[60px]'
 							/>

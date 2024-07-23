@@ -25,7 +25,7 @@ function FourthBlock() {
 			variants={containerVariants}
 		>
 			<motion.img
-				src='/public/assets/glavniy_logo.png'
+				src='/assets/glavniy_logo.png'
 				alt='logo'
 				className='w-[60px] m-3'
 				variants={itemVariants}

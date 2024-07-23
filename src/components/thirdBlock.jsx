@@ -25,7 +25,7 @@ function ThirdBlock() {
 			variants={containerVariants}
 		>
 			<motion.img
-				src='/public/assets/glavniy_logo_orange.png'
+				src='/assets/glavniy_logo_orange.png'
 				alt='logo'
 				className='w-[60px] m-3 pt-[15px]'
 				variants={itemVariants}
@@ -65,7 +65,7 @@ function ThirdBlock() {
 						variants={itemVariants}
 					>
 						<motion.img
-							src='/public/assets/third_1.jpg'
+							src='/assets/third_1.jpg'
 							alt='image1'
 							className='w-full'
 							variants={itemVariants}
@@ -87,20 +87,20 @@ function ThirdBlock() {
 										variants={itemVariants}
 									>
 										<motion.img
-											src='/public/assets/orange_arrow.png'
+											src='/assets/orange_arrow.png'
 											alt='arrow'
 											className='w-[40px] md:w-[60px] mt-[20px] md:mt-[40px] mr-[5px] md:mr-[10px]'
 											variants={itemVariants}
 										/>
 										<motion.img
-											src='/public/assets/FAM_NEST_logo.png'
+											src='/assets/FAM_NEST_logo.png'
 											alt='logo1'
 											className='w-[180px] md:w-[280px]'
 											variants={itemVariants}
 										/>
 									</motion.div>
 									<motion.img
-										src='/public/assets/logo.png'
+										src='/assets/logo.png'
 										alt='logo2'
 										className='w-[100px] md:w-[150px] mt-[10px] md:mt-[20px]'
 										variants={itemVariants}
