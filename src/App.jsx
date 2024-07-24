@@ -12,6 +12,7 @@ import TenthBlock from './components/tenthBlock'
 import EleventhBlock from './components/eleventhBlock'
 import TwelfthBlock from './components/twelfthBlock'
 import ThirteenthBlock from './components/thirteenthBlock'
+import Footer from './components/footer'
 
 function App() {
 	const [loading, setLoading] = useState(true)
@@ -50,6 +51,7 @@ function App() {
 					<EleventhBlock />
 					<TwelfthBlock />
 					<ThirteenthBlock />
+					<Footer />
 				</div>
 			)}
 		</>
