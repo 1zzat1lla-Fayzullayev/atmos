@@ -8,6 +8,7 @@ import SixthBlock from './components/sixthBlock'
 import SeventhBlock from './components/seventhBlock'
 import EighthBlock from './components/eighthBlock'
 import NinthBlock from './components/ninthBlock'
+import TenthBlock from './components/tenthBlock'
 
 function App() {
 	const [loading, setLoading] = useState(true)
@@ -42,6 +43,7 @@ function App() {
 					<SeventhBlock />
 					<EighthBlock />
 					<NinthBlock />
+					<TenthBlock />
 				</div>
 			)}
 		</>
