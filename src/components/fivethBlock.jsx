@@ -293,12 +293,6 @@ function FivethBlock() {
 					<p>05</p>
 				</div>
 			</motion.div>
-			<motion.img
-				src='/assets/secondBlock_bottom_icon.png'
-				alt='bottom_icon'
-				className=' mt-[20px] md:mt-[30px]'
-				variants={itemVariants}
-			/>
 		</motion.div>
 	)
 }
