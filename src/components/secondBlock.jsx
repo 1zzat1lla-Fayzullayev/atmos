@@ -114,7 +114,7 @@ function SecondBlock() {
 				</div>
 			</motion.div>
 			<motion.img
-				src='/assets/secondBlock_bottom_icon.png'
+				src='/assets/bottom_icon.svg'
 				alt='bottom_icon'
 				className='w-full mt-[20px] md:mt-[30px]'
 				variants={itemVariants}
