@@ -15,8 +15,24 @@ body {
 	background-repeat: no-repeat;
 }
 
-.secondBlock {
-	background-image: url('/assets/secondBlock_bg.jpg');
+.sixthBlock{
+	background-image: url('/assets/sixthBlock_1.jpg');
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.seventhBlock{
+	background-image: url('/assets/seventhBlock1.jpg');
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.eighthBlock{
+	background-image: url('/assets/eighthBlock1.jpg');
+	height: 100vh;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
