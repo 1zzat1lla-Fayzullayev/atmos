@@ -46,7 +46,7 @@ function FourthBlock() {
 									alt='arrow'
 									className='w-[25px]'
 								/>
-								<p className='text-[#C4945E] font-semibold'>ATMOS Steam CLUB</p>
+								<p className='text-[#C4945E] font-semibold uppercase'>ATMOS Steam CLUB</p>
 							</div>
 							<motion.h2
 								className='text-[24px] md:text-[30px] lg:text-[40px] max-w-[640px] leading-[30px] md:leading-[40px] lg:leading-[45px]'

@@ -41,3 +41,8 @@ body {
 		transform: rotate(360deg);
 	}
 }
+
+::marker {
+	color: #c4945e;
+	font-size: 9px;
+}
