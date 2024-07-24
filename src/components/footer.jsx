@@ -67,7 +67,7 @@ function Footer() {
 						</h2>
 					</motion.div>
 					<motion.div
-						className='flex flex-col lg:flex-row items-center gap-12 lg:gap-16'
+						className='flex flex-col lg:flex-row items-center lg:items-end gap-12 lg:gap-16'
 						variants={containerVariants}
 					>
 						<motion.div
