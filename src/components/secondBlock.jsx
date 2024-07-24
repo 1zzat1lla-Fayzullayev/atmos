@@ -1,8 +1,21 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { useAnimation, motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import Wrapper from '../layout/wrapper'
 
 function SecondBlock() {
+	const controls = useAnimation()
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.2,
+	})
+
+	React.useEffect(() => {
+		if (inView) {
+			controls.start('visible')
+		}
+	}, [controls, inView])
+
 	const containerVariants = {
 		hidden: { opacity: 0, y: 50 },
 		visible: {
@@ -19,9 +32,10 @@ function SecondBlock() {
 
 	return (
 		<motion.div
+			ref={ref}
 			className='relative font-Poppins'
 			initial='hidden'
-			animate='visible'
+			animate={controls}
 			variants={containerVariants}
 		>
 			<motion.img

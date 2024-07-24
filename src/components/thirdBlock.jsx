@@ -1,8 +1,21 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { useAnimation, motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import Wrapper from '../layout/wrapper'
 
 function ThirdBlock() {
+	const controls = useAnimation()
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.2,
+	})
+
+	React.useEffect(() => {
+		if (inView) {
+			controls.start('visible')
+		}
+	}, [controls, inView])
+
 	const containerVariants = {
 		hidden: { opacity: 0, y: 50 },
 		visible: {
@@ -19,9 +32,10 @@ function ThirdBlock() {
 
 	return (
 		<motion.div
+			ref={ref}
 			className='bg-[#272727] font-Poppins'
 			initial='hidden'
-			animate='visible'
+			animate={controls}
 			variants={containerVariants}
 		>
 			<motion.img
@@ -95,7 +109,7 @@ function ThirdBlock() {
 										<motion.img
 											src='/assets/FAM_NEST_logo.png'
 											alt='logo1'
-											className='w-[180px] md:w-[280px]'
+											className='w-[180px] md:w-[260px]'
 											variants={itemVariants}
 										/>
 									</motion.div>

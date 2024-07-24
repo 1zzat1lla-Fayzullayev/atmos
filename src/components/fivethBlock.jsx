@@ -1,8 +1,20 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useAnimation, useInView } from 'framer-motion'
 import Wrapper from '../layout/wrapper'
 
 function FivethBlock() {
+	const controls = useAnimation()
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.2,
+	})
+
+	React.useEffect(() => {
+		if (inView) {
+			controls.start('visible')
+		}
+	}, [controls, inView])
+
 	const containerVariants = {
 		hidden: { opacity: 0, y: 50 },
 		visible: {
