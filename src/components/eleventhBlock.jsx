@@ -100,7 +100,7 @@ function EleventhBlock() {
 						</div>
 					</motion.div>
 				</Wrapper>
-				<div className='bg-[#22242A] py-12 lg:py-32 w-full lg:w-1/2 flex justify-center items-center'>
+				<div className='bg-[#22242A] py-12 pb-[130px] md:pb-0 lg:py-32 w-full lg:w-1/2 flex justify-center items-center'>
 					<Wrapper>
 						<div className='flex flex-col justify-center items-center text-center gap-5'>
 							<div className='flex flex-col lg:flex-row items-center gap-5 w-full'>
@@ -163,15 +163,15 @@ function EleventhBlock() {
 							</div>
 						</div>
 					</Wrapper>
-				</div>
-			</motion.div>
-			<motion.div
-				className='flex items-start justify-start ml-8 mt-8'
-				variants={itemVariants}
-			>
-				<div className='flex flex-col items-center justify-start gap-4'>
-					<div className='w-[2px] h-12 lg:h-16 bg-black rounded-full'></div>
-					<p className='text-lg lg:text-xl'>11</p>
+					<motion.div
+						className='flex items-start justify-start ml-8 mt-8 absolute left-0 bottom-0'
+						variants={itemVariants}
+					>
+						<div className='flex flex-col items-center justify-start gap-4'>
+							<div className='w-[2px] h-12 lg:h-16 bg-black rounded-full'></div>
+							<p className='text-lg lg:text-xl'>11</p>
+						</div>
+					</motion.div>
 				</div>
 			</motion.div>
 		</>
