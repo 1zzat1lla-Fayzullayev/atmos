@@ -168,8 +168,8 @@ function EleventhBlock() {
 						variants={itemVariants}
 					>
 						<div className='flex flex-col items-center justify-start gap-4'>
-							<div className='w-[2px] h-12 lg:h-16 bg-black rounded-full'></div>
-							<p className='text-lg lg:text-xl'>11</p>
+							<div className='w-[2px] h-12 lg:h-16 bg-white lg:bg-black rounded-full'></div>
+							<p className='text-lg lg:text-xl text-white lg:text-black'>11</p>
 						</div>
 					</motion.div>
 				</div>

@@ -62,7 +62,7 @@ function Footer() {
 						className='text-center lg:text-left mb-8 lg:mb-0'
 						variants={itemVariants}
 					>
-						<h2 className='text-2xl lg:text-3xl'>
+						<h2 className='text-[18px] lg:text-3xl'>
 							Can’t wait to join us? Contact us:
 						</h2>
 					</motion.div>
@@ -74,12 +74,12 @@ function Footer() {
 							className='flex flex-col gap-4 text-center lg:text-left'
 							variants={itemVariants}
 						>
-							<h3 className='text-xl'>Telegram:</h3>
+							<h3 className='text-[17px] md:text-xl'>Telegram:</h3>
 							<a
 								href='https://t.me/borisryabov'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='hover:underline'
+								className='hover:underline text-[14px] md:text-[16px]'
 							>
 								Boris @borisryabov
 							</a>
@@ -87,7 +87,7 @@ function Footer() {
 								href='https://t.me/AlexVolvak'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='hover:underline'
+								className='hover:underline text-[14px] md:text-[16px]'
 							>
 								Alex @AlexVolvak
 							</a>
@@ -95,7 +95,7 @@ function Footer() {
 								href='https://t.me/Yanshevskiy'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='hover:underline'
+								className='hover:underline text-[14px] md:text-[16px]'
 							>
 								Pavel @Yanshevskiy
 							</a>
@@ -108,17 +108,17 @@ function Footer() {
 								href='https://www.essentialsteam.com'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='hover:underline'
+								className='hover:underline text-[14px] md:text-[16px]'
 							>
 								www.essentialsteam.com
 							</a>
 							<a
 								href='mailto:contact@essentialsteam.com'
-								className='hover:underline'
+								className='hover:underline text-[14px] md:text-[16px]'
 							>
 								contact@essentialsteam.com
 							</a>
-							<a href='mailto:py@familynest.com' className='hover:underline'>
+							<a href='mailto:py@familynest.com' className='hover:underline text-[14px] md:text-[16px]'>
 								py@familynest.com
 							</a>
 						</motion.div>
