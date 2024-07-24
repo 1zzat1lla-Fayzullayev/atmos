@@ -72,7 +72,7 @@ function TwelfthBlock() {
 							].map((item, index) => (
 								<motion.div
 									key={index}
-									className='flex items-center gap-[15px]'
+									className='flex items-start gap-[15px]'
 									variants={itemVariants}
 								>
 									<img
