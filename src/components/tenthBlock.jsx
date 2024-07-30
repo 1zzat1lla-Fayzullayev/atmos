@@ -53,65 +53,119 @@ function TenthBlock() {
 						className='grid grid-cols-1 gap-[30px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-[50px] xl:gap-[70px] mx-[30px] xl:mx-0'
 						variants={itemVariants}
 					>
-						{[
-							{
-								image: '/assets/tenth_1.jpg',
-								name: 'Boris Ryabov',
-								position: 'CEO / Co-Founder',
-								points: [
-									'Steam practitioner, entrepreneur and teacher for 10+ years',
-									'12 years in PE/VC (Bright Capital, Maratika)',
-								],
-							},
-							{
-								image: '/assets/tenth_2.jpg',
-								name: 'Alex Baybarin',
-								position: 'Chief Product Officer / Co-Founder',
-								points: [
-									'Steam and holistic wellbeing practitioner for over 15 years',
-									'Art of Steam camp lead at Burning Man',
-									'President of Steamology Institute',
-								],
-							},
-							{
-								image: '/assets/tenth_3.jpg',
-								name: 'Alex Volvak',
-								position: 'Chief Operations / Partnerships',
-								points: [
-									'Launched several wellness, fashion and restaurant chains with 100+ outlets in Europe and EMEA over the course of 10 years',
-									'Serial entrepreneur with 17+ years of experience in e-com, wellness and HoReCa',
-								],
-							},
-							{
-								image: '/assets/tenth_4.jpg',
-								name: 'Pāvels Janševskis',
-								position: 'Chief Project Development / Local Partner in Bali',
-								points: [
-									'Steam culture and intentional communities adept',
-									'Real estate developer with a portfolio of completed residential, office and mixed-use projects',
-									'He is now focused on developing a new family "experience hotel" in Bali',
-								],
-							},
-						].map(({ image, name, position, points }) => (
-							<div
-								key={name}
-								className='flex flex-col items-center text-start'
-							>
-								<img src={image} alt={name} className='w-[180px] mb-3' />
-								<h3 className='text-[#C79660] text-[20px] mb-1'>{name}</h3>
-								<p className='text-[16px] mb-3'>{position}</p>
-								{points.map((point, index) => (
-									<div key={index} className='flex items-center gap-2 mb-2'>
-										<img
-											src='/assets/star.png'
-											alt='star'
-											className='w-[17px]'
-										/>
-										<p className='text-[14px] w-[270px]'>{point}</p>
-									</div>
-								))}
+						<div className='flex flex-col items-center text-start'>
+							<img
+								src='/assets/tenth_1.jpg'
+								alt='Boris Ryabov'
+								className='w-[180px] mb-3'
+							/>
+							<h3 className='text-[#C79660] text-[20px] mb-1'>Boris Ryabov</h3>
+							<p className='text-[16px] mb-3'>CEO / Co-Founder</p>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Steam practitioner, entrepreneur and teacher for 10+ years
+								</p>
 							</div>
-						))}
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									12 years in PE/VC (Bright Capital, Maratika)
+								</p>
+							</div>
+						</div>
+
+						<div className='flex flex-col items-center text-start'>
+							<img
+								src='/assets/tenth_2.jpg'
+								alt='Alex Baybarin'
+								className='w-[180px] mb-3'
+							/>
+							<h3 className='text-[#C79660] text-[20px] mb-1'>Alex Baybarin</h3>
+							<p className='text-[16px] mb-3'>
+								Chief Product Officer / Co-Founder
+							</p>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Steam and holistic wellbeing practitioner for over 15 years
+								</p>
+							</div>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Art of Steam camp lead at Burning Man
+								</p>
+							</div>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									President of Steamology Institute
+								</p>
+							</div>
+						</div>
+
+						<div className='flex flex-col items-center text-start relative mt-[20px]'>
+							<img src="/public/assets/atmos_r.png" alt="404" className='absolute w-[187px] top-[-6%]' />
+							<img
+								src='/public/assets/tenth_3.JPG'
+								alt='Alex Volvak'
+								className='w-[180px] mb-3 rounded-full filter grayscale-[100%]'
+							/>
+							<h3 className='text-[#C79660] text-[20px] mb-1'>Alex Volvak</h3>
+							<p className='text-[16px] mb-3 w-full'>
+								Chief Operations / Partnerships
+							</p>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Launched several wellness, fashion and restaurant chains with
+									100+ outlets in Europe and EMEA over the course of 10 years
+								</p>
+							</div>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Serial entrepreneur with 17+ years of experience in e-com,
+									wellness and HoReCa
+								</p>
+							</div>
+						</div>
+
+						<div className='flex flex-col items-center text-start relative mt-[20px]'>
+							<img src="/public/assets/atmos_r.png" alt="404" className='absolute w-[187px] top-[-6%]' />
+							<img
+								src='/assets/tenth_4.JPG'
+								alt='Pāvels Janševskis'
+								className='w-[180px] mb-3 rounded-full filter grayscale-[100%]'
+							/>
+							<h3 className='text-[#C79660] text-[20px] mb-1'>
+								Pāvels Janševskis
+							</h3>
+							<p className='text-[16px] mb-3'>
+								Chief Project Development / Local Partner in Bali
+							</p>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Steam culture and intentional communities adept
+								</p>
+							</div>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									Real estate developer with a portfolio of completed
+									residential, office and mixed-use projects
+								</p>
+							</div>
+							<div className='flex items-center gap-2 mb-2'>
+								<img src='/assets/star.png' alt='star' className='w-[17px]' />
+								<p className='text-[14px] w-[270px]'>
+									He is now focused on developing a new family "experience
+									hotel" in Bali
+								</p>
+							</div>
+						</div>
 					</motion.div>
 				</motion.div>
 			</Wrapper>
